@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/john/development/build-qtquick_app-Desktop_Qt_5_1_0_GCC_64bit-Debug/qml/box_test'
+let g:netrw_dirhist_2='/home/john/Documents/Riv'

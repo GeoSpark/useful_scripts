@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Script taken from the PyCon Asia Pacific 2012 talk 'Vim as a Python IDE'
+# by Martin Brochhaus (http://www.youtube.com/watch?v=YhqsjUUHj6g)
+
+# Prerequisites:
+# (Ubuntu) sudo apt-get build-dep vim
+# (OSX) Command line tools for Xcode
+
+hg clone https://vim.googlecode.com/hg/ vim
+cd vim/src
+./configure --enable-pythoninterp --with-features=huge --prefix=$HOME/opt/vim
+make && make install
+mkdir -p $HOME/bin
+cd $HOME/bin
+ln -s $HOME/opt/vim/bin/vim
+
+which vim
+vim--version
+
+# On Ubuntu:
+# sudo apt-get install gtk2-engines-pixbuf
